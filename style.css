@@ -1,0 +1,92 @@
+/* 1. تصفير المسافات الافتراضية */
+body {
+    background-color: #f0f2ed; /* هذا اللون كريمي هادئ جداً وفخم */
+    margin: 0;                 /* لإزالة أي هوامش تلقائية من المتصفح */
+    padding: 0;                /* لإزالة أي مسافات داخلية تلقائية */
+    font-family: 'Arial', sans-serif; /* نوع الخط المستخدم */
+}
+* {
+    margin: 0;                /* مسح أي مسافة خارج العناصر */
+    padding: 0;               /* مسح أي مسافة داخل العناصر */
+    box-sizing: border-box;   /* ضبط حساب الحجم بدقة */
+    font-family: sans-serif;  /* نوع الخط */
+}
+
+/* 2. تنسيق الهيدر (القائمة العلوية) */
+.navbar {
+    display: flex;            /* تفعيل النظام المرن */
+    justify-content: space-between; /* اللوجو يمين والروابط يسار */
+    align-items: center;      /* موازنة العناصر عمودياً */
+    padding: 15px 5%;         /* مسافة داخلية */
+    background:  #5a654f !important;      /* لون الخلفية أبيض */
+}
+
+/* 3. اللوجو والروابط */
+.logo {
+    font-size: 30px;          /* حجم خط اللوجو */
+    font-weight: bold;        /* تجعله عريضاً */
+    color:  #fbfcfa;           /* اللون الأخضر */
+}
+
+nav ul {
+    display: flex;            /* وضع الروابط بجانب بعضها */
+    list-style: none;         /* حذف النقاط */
+}
+
+nav ul li {
+    margin-left: 40px;        /* مسافة بين كل رابط والثاني */
+}
+
+nav ul li a {
+    text-decoration: none;    /* حذف الخط تحت الرابط */
+    color: #f9f9f9;           /* لون النص */
+    font-size: 20px;/*تغيير حجم الروابط*/
+    font-weight: bold;
+}
+
+/* 4. تفاعل الروابط (تغيير اللون) */
+nav ul li a:hover {
+    color: #bfca9e;           /* يتغير اللون للأخضر عند مرور الماوس */
+}
+
+nav ul li a:active {
+    color: rgb(70, 94, 72);               /* يتغير اللون لحظة الضغط (طلبك) */
+}
+
+/* 5. البانر والصورة */
+.banner {
+    position: relative;       /* لكي نضع النص فوق الصورة */
+    width: 100%;              /* عرض كامل */
+    height: 500px;            /* ارتفاع الصورة */
+    overflow: hidden;         /* قص الزوائد */
+}
+
+.banner img {
+    width: 100%;              /* عرض الصورة كامل */
+    height: 100%;             /* ارتفاعها كامل */
+    object-fit: cover;        /* منع تمطط الصورة وجعلها واضحة */
+}
+
+/* 6. النص والزر فوق الصورة */
+.banner-text {
+    position: absolute;       /* جعل النص يطفو فوق الصورة */
+    top: 50%;                 /* توسيط من الأعلى */
+    left: 50%;                /* توسيط من اليسار */
+    transform: translate(-50%, -50%); /* ضبط السنتر بدقة */
+    text-align: center;       /* موازنة النص في النص */
+    color: #ffffff;           /* لون النص أبيض */
+}
+
+.banner-text h1 {
+    font-size: 3rem;          /* حجم العنوان */
+    margin-bottom: 20px;      /* مسافة تحت العنوان لكي لا يلتصق بما تحته */
+}
+
+.btn {
+    display: inline-block;    /* ليعمل كزر */
+    padding: 12px 30px;       /* مساحة داخل الزر */
+    background: #b0bd8e;      /* لون الزر أخضر */
+    color: #ffffff;           /* نص الزر أبيض */
+    border-radius: 25px;      /* زوايا دائرية */
+    text-decoration: none;    /* حذف الخط */
+}
